@@ -1,5 +1,7 @@
 from goblin import Goblin
 from hero import Hero
+from enemy import Enemy
+from boss import BOSS
 
 ARENA_NAME = "The Pink Potato"
 
@@ -29,6 +31,11 @@ def main():
     bob = Hero("bobby")
     print(f"{bob.name} enters the arena!")
     battle(bob, goblin)
+
+
+    boss = BOSS("Rick")
+    print("Boss has enetered the arena")
+    battle(bob, boss)
 
 
 if __name__ == "__main__":
